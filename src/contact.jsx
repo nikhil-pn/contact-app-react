@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { css } from "@emotion/react";
 
 export default function Contact() {
+  // access loader data uisng useLoaderData hook
   const contact = useLoaderData();
   console.log(contact, "contafct logaed");
 
