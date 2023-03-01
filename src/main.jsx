@@ -15,6 +15,7 @@ import Contact from "./contact";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
+    {/* loader will allow to pass the data inside the children of the main route */}
       <Route path="/" element={<LayOut />} loader={loadContacts}>
         <Route
           path="/contacts/:contactId"
