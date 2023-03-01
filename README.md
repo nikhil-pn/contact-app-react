@@ -1,3 +1,3 @@
 # contact-app-react
 
-![Alt text](url "sreenshot.png")
+![Alt text](url "assets/sreenshot.png")
