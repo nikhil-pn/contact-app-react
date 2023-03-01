@@ -12,9 +12,9 @@ const primary = css`
 
 function Header({ onSearch }) {
   const searchElementRef = useRef(null);
-  function onSubmit(e){
-    e.preventDefault()
-    onSearch(searchElementRef.current.value)
+  function onSubmit(e) {
+    e.preventDefault();
+    onSearch(searchElementRef.current.value);
   }
   return (
     <header
@@ -36,11 +36,8 @@ function Header({ onSearch }) {
           ref={searchElementRef}
           type="text"
           placeholder="Search Contacts"
-          
         />
-        <button >
-          Search
-        </button>
+        <button>Search</button>
       </form>
     </header>
   );
@@ -62,14 +59,14 @@ export function SideNav() {
         overflow: auto;
       `}
     >
-      <Header onSearch={onSearch} ></Header>
+      <Header onSearch={onSearch}></Header>
       <section
         css={css`
           padding: 16px;
           overflow: auto;
         `}
       >
-        <Contactlist searchText={searchText} ></Contactlist>
+        <Contactlist searchText={searchText}></Contactlist>
       </section>
       <footer>Footer</footer>
     </aside>
