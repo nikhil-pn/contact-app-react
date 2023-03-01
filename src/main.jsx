@@ -11,6 +11,7 @@ import { RouterProvider } from "react-router-dom";
 import { loadContacts, loadContactID } from "./loaders";
 import Contact from "./contact";
 
+//creating router from createBrowerRouter
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
